@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Menu</title>
+    <link rel="stylesheet" href="styles.css" />
+    <style>
+      /* Add some styling for the contact section */
+      #contact-section {
+        padding: 20px;
+        background-color: #998c8c; /* Set your desired background color */
+        background-image: url("images.jpg");
+        background-size: cover; /* Add this line */
+        background-position: center; /* Add this line to center the background */
+        color: white; /* Set text color to white */
+      }
+      
+    </style>
+  </head>
+  <body>
+    <div class="glowing-text">
+      <h2>
+        Welcome to<br />
+        Durga Canteen
+      </h2>
+    </div>
+
+    <div class="cont">
+      <div id="sec1">
+        <h2>About us</h2>
+        <h6>
+          "Welcome to the heart of our college's social life—The Durga Canteen.
+          We pride ourselves on offering a diverse menu of delicious and
+          affordable meals, with options to cater to every taste and dietary
+          need. Our canteen is not just a place to eat; it's a gathering spot
+          for students to enjoy quality food in a cozy and vibrant atmosphere.
+          Join us for a culinary adventure, special events, and a sense of
+          community that makes dining here a memorable experience. We look
+          forward to serving you and being a part of your college journey."
+        </h6>
+      </div>
+      <img src="ima.png" alt="chef" width="260px" height="260px" />
+    </div>
+    <div class="image-container">
+      <!-- Your image items here -->
+    </div>
+
+    <!-- Contact Section -->
+    <div id="contact-section" style="display: none;">
+      <h2>Contact Us</h2>
+      <p>Name: Vidyananda Shetty</p>
+      <p>Phone: 9481180930</p>
+      <p>Email: vidyanand4@gmail.com</p>
+      <p>Address: Durga Canteen, near NMAM Institute of Technology, Nitte, Udupi district, Karnataka</p>
+    </div>
+
+    <!-- Navigation -->
+    <nav>
+      <a href="index.html"><h4>Home</h4></a>
+      <a href="menu.html"><h4>Menu</h4></a>
+      <a href="#" onclick="showContactSection()"><h4>Contact Us</h4></a>
+      <a href="qr.html"><h4>Pay Here</h4></a>
+    </nav>
+
+    <!-- Add a script to scroll to the contact section -->
+    <script>
+        function showContactSection() {
+            // Show the contact section
+            document.getElementById('contact-section').style.display = 'block';
+          
+            // Scroll to the contact section
+            document.getElementById('contact-section').scrollIntoView({ behavior: 'smooth' });
+          }
+          
+    </script>
+  </body>
+</html>
+
+
